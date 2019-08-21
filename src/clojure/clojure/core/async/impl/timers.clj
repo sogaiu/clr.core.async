@@ -37,7 +37,7 @@
       (recur (inc level))
       level)))
 
-(deftype SkipListNode [key ^:mutable val forward]
+(deftype SkipListNode [key ^:volatile-mutable val forward]
   Seqable                                                 ;;; ISeqable
   (seq [coll]                                             ;;; -seq
     (list key val))

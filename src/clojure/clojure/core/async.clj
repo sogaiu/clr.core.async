@@ -8,7 +8,7 @@
 ;;   Ported to ClojureCLR by David Miller.
 (ns clojure.core.async
   (:refer-clojure :exclude [reduce into merge map take partition
-                            partition-by] :as core)
+                            partition-by])
   (:require [clojure.core.async.impl.protocols :as impl]
             [clojure.core.async.impl.channels :as channels]
             [clojure.core.async.impl.buffers :as buffers]
